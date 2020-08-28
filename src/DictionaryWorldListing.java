@@ -47,7 +47,7 @@ public class DictionaryWorldListing {
 
         //Sorting the strings
         for (int i = 0; i < 10; i++) {
-            for (int j = i + 1; j < 10 - 1; j++) {
+            for (int j = i + 1; j < 10; j++) {
 
                 if (fruits[i].compareTo(fruits[j]) > 0) {
 
@@ -59,26 +59,18 @@ public class DictionaryWorldListing {
         }
         //Displaying the strings after sorting them based on alphabetical order
         System.out.print("Alphabetical Order: ");
-        for (int i = 0; i < 10 - 1; i++) {
+        for (int i = 0; i <= 10 - 1; i++)
+        {
             System.out.print(fruits[i] + ", ");
-                System.out.println("------");
-        }
-        for (int i = 0; i < 10; i++) {
-            for (int j = i + 1; j < 10 - 1; j++) {
 
-                if (fruits[i].compareToIgnoreCase(fruits[j]) > 0) {
 
-                    fruitName = fruits[i];
-                    fruits[i] = fruits[j];
-                    fruits[j] = fruitName;
-                }
             }
-        }
         //Displaying the strings after sorting them on reserved alphabetical order
-        System.out.print("Reserved Alphabetical Order: ");
-        for (int i = 0; i < 10 - 1; i++) {
-                System.out.print(fruits[i] + ", ");
-                    System.out.println("------");
+        System.out.println();
+        System.out.print("Reversed Alphabetical Order: ");
+        for (int i = 9; i >= 0; i--) {
+            System.out.print(fruits[i] + ", ");
+        }
+
         }
     }
-}
