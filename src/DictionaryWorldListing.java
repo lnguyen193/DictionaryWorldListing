@@ -58,19 +58,37 @@ public class DictionaryWorldListing {
             }
         }
         //Displaying the strings after sorting them based on alphabetical order
-        System.out.print("Alphabetical Order: ");
-        for (int i = 0; i <= 10 - 1; i++)
-        {
+        System.out.println("Alphabetical Order: ");
+        for (int i = 0; i <= 10 - 1; i++) {
             System.out.print(fruits[i] + ", ");
 
-
-            }
+        }
         //Displaying the strings after sorting them on reserved alphabetical order
         System.out.println();
-        System.out.print("Reversed Alphabetical Order: ");
+        System.out.println("Reversed Alphabetical Order: ");
         for (int i = 9; i >= 0; i--) {
             System.out.print(fruits[i] + ", ");
         }
-
+        //Displaying the strings to be upper case
+        System.out.println();
+        System.out.println("UPPER CASE ARRAYS: ");
+        for (int i = 0; i < 10; i++) {
+            fruits[i] = fruits[i].toUpperCase();
+            System.out.print(fruits[i] + ", ");
         }
-    }
+        //Displaying the words that start with vowels "a, e, o, u i"
+        System.out.println();
+        System.out.println("Words that start with vowels 'a, e, o ,u, i': ");
+        for (int i = 0; i < 10; i++) {
+            char vowel = fruits[i].charAt(0);
+            if (vowel == 'A' || vowel == 'E' || vowel == 'O' || vowel == 'U' || vowel == 'I') {
+                vowel++;
+            }
+        System.out.print(fruits[i] + ", ");
+        }
+        //Displaying all vowels have been changed to 'A'
+        System.out.println();
+        System.out.println("Words with all vowels have been changed to 'a': ");
+
+            }
+        }
