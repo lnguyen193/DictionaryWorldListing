@@ -90,7 +90,20 @@ public class DictionaryWorldListing {
         }
         //Displaying all vowels have been changed to 'A'
         System.out.println();
-        System.out.println("Words with all vowels have been changed to 'a': ");
+        System.out.println("Words with all vowels have been changed to 'A': ");
+
+        for (int i = 0; i < 10; i++) {
+            char vowel = fruits[i].charAt(0);
+            char[] currentArray = fruits[i].toCharArray();
+            if (vowel == 'A' || vowel == 'E' || vowel == 'O' || vowel == 'U' || vowel == 'I') {
+                vowel = 'A';
+            }
+                System.out.println((vowel));
+                String word = new String(currentArray);
+                System.out.println(word);
+
 
             }
         }
+    }
+
