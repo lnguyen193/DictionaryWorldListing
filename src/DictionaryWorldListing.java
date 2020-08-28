@@ -81,10 +81,12 @@ public class DictionaryWorldListing {
         System.out.println("Words that start with vowels 'a, e, o ,u, i': ");
         for (int i = 0; i < 10; i++) {
             char vowel = fruits[i].charAt(0);
+            char[] currentArray = fruits[i].toCharArray();
             if (vowel == 'A' || vowel == 'E' || vowel == 'O' || vowel == 'U' || vowel == 'I') {
-                vowel++;
+                System.out.println((vowel));
+                String word = new String(currentArray);
+                System.out.println(word);
             }
-        System.out.print(fruits[i] + ", ");
         }
         //Displaying all vowels have been changed to 'A'
         System.out.println();
